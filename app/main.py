@@ -31,37 +31,3 @@ class Carnivore(Animal):
         if herbivore.health <= 0:
             herbivore.die()
             print(f"{herbivore.name} dies")
-
-lion = Carnivore("King Lion")
-rabbit = Herbivore("Susan", 25)
-print(f"Num of animals: {len(Animal.alive)}")
-print(rabbit in Animal.alive)
-print(f"Rabbit health: {rabbit.health}")
-lion.bite(rabbit)
-print(f"Rabbit health: {rabbit.health}")
-print(f"Rabbit is alive: {rabbit in Animal.alive}")
-print(Animal.alive)
-print(f"Num of animals: {len(Animal.alive)}")
-
-
-# lion = Carnivore("Lion King")
-# rabbit = Herbivore("Susan")
-# print(f"Num of animals: {len(Animal.alive)}")
-# print(rabbit in Animal.alive)
-# print(f"Num of animals: {len(Animal.alive)}")
-# print(f"Rabbit health: {rabbit.health}")
-# lion.bite(rabbit)
-# print(f"Rabbit health: {rabbit.health}")  # bited
-#
-# rabbit.hide()
-# lion.bite(rabbit)
-# print(f"Rabbit health: {rabbit.health}")  # lion cannot bite hidden rabbit
-#
-# rabbit.hide()
-# lion.bite(rabbit)
-# print(f"Rabbit health: {rabbit.health}")  # rabbit is dead
-#
-# print(f"Rabbit is alive: {rabbit in Animal.alive}")  # False
-#
-# print(Animal.alive)
-# print(f"Num of animals: {len(Animal.alive)}")
