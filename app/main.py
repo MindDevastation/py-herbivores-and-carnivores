@@ -1,10 +1,9 @@
 class Animal:
     alive = []
 
-    def __init__(self,
-             name: str,
-             health: int = 100,
-             hidden: bool = False) -> None:
+    def __init__(self, name: str,
+                 health: int = 100,
+                 hidden: bool = False) -> None:
         self.name = name
         self.health = 100
         self.hidden = False
@@ -31,3 +30,4 @@ class Carnivore(Animal):
             herbivore.health -= 50
         if herbivore.health <= 0:
             herbivore.die()
+            print(f"{herbivore.name} dies")
